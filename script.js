@@ -4,6 +4,7 @@ const entryDropdown = document.getElementById("entry-dropdown");
 const addEntryButton = document.getElementById("add-entry");
 const clearButton = document.getElementById("clear");
 const output = document.getElementById("output");
+
 let isError = false;
 function cleanInputString(str) {
   /* const strArray = str.split('');
@@ -17,5 +18,12 @@ function cleanInputString(str) {
   return str.replace(regex, "");
 }
 function isInvalidInput(str) {
-  const regex = /e/i;
+  const regex = /+\d+e\d+/i;
+  return str.match(regex);
+}
+
+function addEntry() {
+  const targetInputContainer = document.querySelector(
+    `#${entryDropdown.value} .input-container`
+  );
 }
