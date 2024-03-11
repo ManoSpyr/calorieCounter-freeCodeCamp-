@@ -26,4 +26,6 @@ function addEntry() {
   const targetInputContainer = document.querySelector(
     `#${entryDropdown.value} .input-container`
   );
+  const entryNumber =
+    targetInputContainer.querySelectorAll('input[type="text"]').length; // get all of the number inputs
 }
