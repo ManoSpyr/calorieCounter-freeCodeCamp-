@@ -37,6 +37,7 @@ function getCaloriesFromInputs(list) {
   let calories = 0;
   for (const item of list) {
     console.log(calories);
-    const currVal = item.value;
+    const currVal = cleanInputString(item.value);
+    let invalidInputMatch = isInvalidInput(currVal);
   }
 }
