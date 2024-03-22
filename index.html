@@ -3,9 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <script src="script.js"></script>
-
+    <link rel="stylesheet" href="style.css" />
     <title>Calorie Counter</title>
   </head>
   <body>
@@ -15,9 +13,9 @@
         <form id="calorie-counter">
           <label for="budget">Budget</label>
           <input
-            id="budget"
             type="number"
             min="0"
+            id="budget"
             placeholder="Daily calorie budget"
             required
           />
@@ -51,16 +49,17 @@
                 <option value="snacks">Snacks</option>
                 <option value="exercise">Exercise</option>
               </select>
-              <button id="add-entry" type="button">Add Entry</button>
+              <button type="button" id="add-entry">Add Entry</button>
             </span>
           </div>
           <div>
             <button type="submit">Calculate Remaining Calories</button>
-            <button id="clear" type="button">Clear</button>
+            <button type="button" id="clear">Clear</button>
           </div>
         </form>
         <div id="output" class="output hide"></div>
       </div>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
