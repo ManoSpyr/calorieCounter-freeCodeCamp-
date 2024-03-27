@@ -49,4 +49,8 @@ function getCaloriesFromInputs(list) {
   }
   return calories;
 }
-function calculateCalories(e) {}
+function calculateCalories(e) {
+  e.preventDefault();
+  isError = false;
+}
+addEntryButton.addEventListener("click", addEntry);
