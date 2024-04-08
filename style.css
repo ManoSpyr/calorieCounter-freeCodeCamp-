@@ -12,8 +12,8 @@
   body {
     font-family: "Lato", Helvetica, Arial, sans-serif;
     font-size: 18px;
-    background-color: var(--fcc-blue);
-    color: var(--light-grey);
+    background-color: #603F8B;
+    color: #B4FEE7;
   }
   
   h1 {
@@ -44,15 +44,21 @@
   button {
     cursor: pointer;
     text-decoration: none;
-    background-color: var(--light-yellow);
-    border: 2px solid var(--dark-yellow);
+    background: linear-gradient(45deg, #FD49A0, #D73584); 
+    border: 2px solid #D73584;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    margin: 5px;
   }
   
+  button:hover {
+    transform: scale(1.1); /* Slightly increase the button's size on hover */
+}
   button,
   input,
   select {
     min-height: 24px;
-    color: var(--dark-blue);
+    color:#0a0a23;
   }
   
   fieldset,
@@ -61,6 +67,7 @@
   input,
   select {
     margin-bottom: 10px;
+    border-radius: 8px;
   }
   
   .output {
